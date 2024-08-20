@@ -109,3 +109,19 @@ switch (menu) {
         break;
 }
 }
+
+function ejercicio_9() {
+    let primerLadoTriangulo = promt ('Ingresa el primer lado del triangulo')
+let segundoLadoTriangulo = promt ('Ingresa el segundo lado del triangulo')
+let terceroLadoTriangulo = promt ('Ingresa el tercer lado del triangulo')
+if (primerLadoTriangulo === segundoLadoTriangulo === terceroLadoTriangulo){
+    console.log('Es un triangulo equilatero')
+}
+else if (primerLadoTriangulo === segundoLadoTriangulo || segundoLadoTriangulo === terceroLadoTriangulo || terceroLadoTriangulo === primerLadoTriangulo){
+    console.log('Es un triangulo isosceles')
+}
+else{
+    console.log('Es un triangulo escaleno')
+}
+
+}
