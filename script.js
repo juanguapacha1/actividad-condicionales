@@ -135,3 +135,19 @@ else{
     console.log('Intenta de nuevo')
 }
 }
+
+function ejercicio_11() {
+    let precioBase = prompt('Ingresa el precio base del producto')
+if(precioBase > 500) {
+    let descuento = precioBase * 0.15
+    console.log('El precio final es: ' + (precioBase - descuento))
+}
+else if (precioBase >= 300 && precioBase <= 500) {
+    let descuento = precioBase * 0.10
+    console.log('El precio final es: ' + (precioBase - descuento))
+}
+else{
+    let descuento = precioBase * 0.05
+    console.log('El precio final es: ' + (precioBase - descuento))
+}
+}
