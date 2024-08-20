@@ -18,3 +18,13 @@ else{
 }
 }
 
+function ejercicio_3 () {
+    let numeroUsuarioParImpar = prompt('Ingresa un numero')
+if (numeroUsuarioParImpar % 2 == 0){
+    console.log('El numero es par')
+}
+else{
+    console.log('El numero es impar')
+}
+}
+
