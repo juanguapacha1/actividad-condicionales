@@ -40,3 +40,16 @@ else{
 }
 }
 
+function ejercicio_5 () {
+    let numeroUsuario1 = prompt('Ingresa el primer numero')
+let numeroUsuario2 = prompt('Ingresa el segundo numero')
+if (numeroUsuario1 > numeroUsuario2){
+    console.log('El primer numero es mayor')
+}
+else if (numeroUsuario1 < numeroUsuario2){
+    console.log('El segundo numero es mayor')
+}
+else{
+    console.log('Los numeros son iguales')
+}
+}
