@@ -185,3 +185,17 @@ function ejercicio_13() {
         console.log('Aceso denegado')
     }
 }
+
+function ejercicio_14() {
+    let horaDia = prompt('Ingresa una hora (entre 0 y 23)')
+    if(horaDia >= 6 && horaDia <= 12){
+        console.log('buenos dias')
+    }
+    else if(horaDia > 12 && horaDia <= 18){
+        console.log('buenas tardes')
+    }
+    else if (horaDia > 18 && horaDia <= 23){
+        console.log('buenas noches')
+    }
+}
+
