@@ -72,3 +72,20 @@ else{
     console.log('Edad invalida')
 }
 }
+
+function ejercicio_7() {
+    let nota = prompt ('Ingresa una nota entre 0-100')
+if (nota >= 90 && nota <= 100){
+    console.log('Excelente')
+}
+else if (nota >= 70 && nota <= 89){
+    console.log('Bueno')
+}
+else if (nota >= 50 && nota <= 69){
+    console.log('Regular')
+}
+else if (nota >= 0 && nota <= 49){
+    console.log('Insuficiente')
+}
+}
+
