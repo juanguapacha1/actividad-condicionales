@@ -53,3 +53,22 @@ else{
     console.log('Los numeros son iguales')
 }
 }
+
+function ejercicio_6() {
+    let clasificacionEdad = prompt('Ingresa tu edad')
+if(clasificacionEdad >= 0 && clasificacionEdad <= 12){
+    console.log('Eres un nino')
+}
+else if (clasificacionEdad > 12 && clasificacionEdad < 17){
+    console.log('Eres un adolecente')
+}
+else if (clasificacionEdad >= 18 && clasificacionEdad < 65 ){
+    console.log('Eres un adulto')
+}
+else if (clasificacionEdad >= 65 ){
+    console.log('Eres un adulto mayor')
+}
+else{
+    console.log('Edad invalida')
+}
+}
