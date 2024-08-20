@@ -90,7 +90,7 @@ else if (nota >= 0 && nota <= 49){
 }
 
 function ejercicio_8() {
-    let menu = prompt ('Selecciona: 1.pizza 2.Hamburguesa 3.tacos')
+    let menu = parseInt(prompt ('Selecciona: 1.pizza 2.Hamburguesa 3.tacos'))
 switch (menu) {
     case 1:
         console.log('seleccionastes una pizza')
@@ -111,9 +111,9 @@ switch (menu) {
 }
 
 function ejercicio_9() {
-    let primerLadoTriangulo = promt ('Ingresa el primer lado del triangulo')
-let segundoLadoTriangulo = promt ('Ingresa el segundo lado del triangulo')
-let terceroLadoTriangulo = promt ('Ingresa el tercer lado del triangulo')
+let primerLadoTriangulo = prompt ('Ingresa el primer lado del triangulo')
+let segundoLadoTriangulo = prompt ('Ingresa el segundo lado del triangulo')
+let terceroLadoTriangulo = prompt ('Ingresa el tercer lado del triangulo')
 if (primerLadoTriangulo === segundoLadoTriangulo === terceroLadoTriangulo){
     console.log('Es un triangulo equilatero')
 }
@@ -125,30 +125,41 @@ else{
 }
 }
 
-function ejercicio_10() {
-    let numeroParaAdivinar = prompt('Adivina un numero entre 1-10')
-let numeroAleatorio = Math.floor(Math.random() * 10) + 1
-if (numeroParaAdivinar === numeroAleatorio){
-    console.log('Has acertado')
-}
-else{
-    console.log('Intenta de nuevo')
-}
+function ejercicio_10() {   
+    let contador = 1;
+    let numeroAleatorio = Math.floor(Math.random() * 10) + 1;
+    
+    while (contador <= 3) {
+        let numeroParaAdivinar = parseInt(prompt('Adivina un número entre 1-10'), 10);
+        
+        if (numeroParaAdivinar === numeroAleatorio) {
+            console.log('¡Has acertado!');
+            break;
+        } else {
+            console.log('Intenta de nuevo');
+        }
+        
+        contador++;
+    }
+    
+    if (contador == 3) {
+        console.log(`Lo siento, no has adivinado el número. Era ${numeroAleatorio}.`);
+    }
 }
 
 function ejercicio_11() {
     let precioBase = prompt('Ingresa el precio base del producto')
 if(precioBase > 500) {
     let descuento = precioBase * 0.15
-    console.log('El precio final es: ' + (precioBase - descuento))
+    console.log('Tienes un descuento del 15%, el precio final es: ' + (precioBase - descuento))
 }
 else if (precioBase >= 300 && precioBase <= 500) {
     let descuento = precioBase * 0.10
-    console.log('El precio final es: ' + (precioBase - descuento))
+    console.log('Tienes un descuento del 10%, El precio final es: ' + (precioBase - descuento))
 }
 else{
     let descuento = precioBase * 0.05
-    console.log('El precio final es: ' + (precioBase - descuento))
+    console.log('Tienes un descuento del 5%, El precio final es: ' + (precioBase - descuento))
 }
 }
 
@@ -174,11 +185,11 @@ else{
 }
 
 function ejercicio_13() {
-    let nombreUsuario = admin
-    let password = "1234"
     let ingresaUsuario = prompt('Ingresa tu usuario')
-    let ingresaPassword = prompt('Ingresa tu contraseña')
-    if (ingresaUsuario === nombreUsuario && ingresaPassword === password) {
+    let ingresaPassword = parseInt(prompt('Ingresa tu contraseña'))
+    let nombreUsuario = 'admin'
+    let password = 1234
+    if (ingresaUsuario == nombreUsuario && ingresaPassword == password) {
         console.log('Aceso concedido')
     }
     else{
@@ -214,4 +225,56 @@ function ejercicio_15() {
     else{
         console.log('obesidad')
     }
+}
+let numeroEjercicio = parseInt(prompt ('Elije un ejercicio (1-15)'))
+switch (numeroEjercicio) {
+    case 1:
+        ejercicio_1();
+        break;
+    case 2:
+        ejercicio_2();
+        break;
+    case 3:
+        ejercicio_3();
+        break;
+    case 4:
+        ejercicio_4();
+        break;
+    case 5:
+        ejercicio_5();
+        break;
+    case 6:
+        ejercicio_6();
+        break;
+    case 7:
+        ejercicio_7();
+        break;
+    case 8:
+        ejercicio_8();
+        break;
+    case 9:
+        ejercicio_9();
+        break;
+    case 10:
+        ejercicio_10();
+        break;
+    case 11:
+        ejercicio_11();
+        break;
+    case 12:
+        ejercicio_12();
+        break;
+    case 13:
+        ejercicio_13();
+        break;
+    case 14:
+        ejercicio_14();
+        break;
+    case 15:
+        ejercicio_15();
+        break;
+
+    default:
+        console.log('opcion invalida')
+        break;
 }
