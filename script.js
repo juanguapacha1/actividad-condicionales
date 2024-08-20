@@ -172,3 +172,16 @@ else{
     console.log('El '+ ano + ' no es bisiesto')
 }
 }
+
+function ejercicio_13() {
+    let nombreUsuario = admin
+    let password = "1234"
+    let ingresaUsuario = prompt('Ingresa tu usuario')
+    let ingresaPassword = prompt('Ingresa tu contraseña')
+    if (ingresaUsuario === nombreUsuario && ingresaPassword === password) {
+        console.log('Aceso concedido')
+    }
+    else{
+        console.log('Aceso denegado')
+    }
+}
