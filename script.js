@@ -89,3 +89,23 @@ else if (nota >= 0 && nota <= 49){
 }
 }
 
+function ejercicio_8() {
+    let menu = prompt ('Selecciona: 1.pizza 2.Hamburguesa 3.tacos')
+switch (menu) {
+    case 1:
+        console.log('seleccionastes una pizza')
+
+        break;
+    case 2:
+        console.log('Seleccionastes una hamburguesa')
+
+        break;
+    case 3:
+        console.log('Seleccionastes un taco')
+        break;
+
+    default:
+        console.log('Opcion invalida')
+        break;
+}
+}
