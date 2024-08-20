@@ -199,3 +199,19 @@ function ejercicio_14() {
     }
 }
 
+function ejercicio_15() {
+    let pesoUsuario = parseInt(prompt ('Ingrese su peso'))
+    let alturaUsuario = parseInt(prompt ('Ingrese su altura'))
+    let IMC = pesoUsuario / alturaUsuario^2
+    if (IMC < 18.5) {
+        console.log('Peso bajo')
+    }    else if(IMC >= 18.5 && IMC <= 24.9){
+        console.log('Peso normal')
+    }
+    else if(IMC >= 25 && IMC <+29.9){
+        console.log('sobre peso')
+    }
+    else{
+        console.log('obesidad')
+    }
+}
