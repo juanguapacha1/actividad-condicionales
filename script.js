@@ -151,3 +151,24 @@ else{
     console.log('El precio final es: ' + (precioBase - descuento))
 }
 }
+
+function ejercicio_12() {
+    let ano = prompt('Ingresa un año')
+function esBisiesto(anio) {
+    if (anio % 4 === 0) {
+        if (anio % 100 === 0) {
+            return anio % 400 === 0;
+        } else {
+            return true;
+        }
+    } else {
+        return false;
+    }
+}
+if (esBisiesto(ano)) {
+    console.log('El año es bisiesto')
+}
+else{
+    console.log('El '+ ano + ' no es bisiesto')
+}
+}
