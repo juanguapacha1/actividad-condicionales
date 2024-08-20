@@ -123,5 +123,15 @@ else if (primerLadoTriangulo === segundoLadoTriangulo || segundoLadoTriangulo ==
 else{
     console.log('Es un triangulo escaleno')
 }
+}
 
+function ejercicio_10() {
+    let numeroParaAdivinar = prompt('Adivina un numero entre 1-10')
+let numeroAleatorio = Math.floor(Math.random() * 10) + 1
+if (numeroParaAdivinar === numeroAleatorio){
+    console.log('Has acertado')
+}
+else{
+    console.log('Intenta de nuevo')
+}
 }
